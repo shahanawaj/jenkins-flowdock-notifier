@@ -9,7 +9,7 @@ def call(script, apiToken, tags = '') {
 
     tags = tags.replaceAll("\\s","")
 
-    def flowdockURL = "api.flowdock.com/flows/adpes/thunderbirds/messages/w7tVQLzRG-m_taZDcnDHUvnueX4"
+    def flowdockURL = "https://api.flowdock.com/flows/adpes/thunderbirds/messages/w7tVQLzRG-m_taZDcnDHUvnueX4"
 
     // build status of null means successful
     def buildStatus =  script.currentBuild.result ? script.currentBuild.result : 'SUCCESS'
